@@ -47,15 +47,6 @@ This project provides a comprehensive, end-to-end demonstration of how to train 
 * **`huggingface_hub`:** A Python library for programmatic interaction with the Hugging Face Hub (Spaces, Models, Datasets).
 * **`requests`:** A popular Python library for making HTTP requests to test the API.
 
-## 📁 Project Structure
-├── iris_classifier_colab.ipynb  # The main Google Colab notebook for end-to-end execution
-├── app.py                       # The FastAPI application code defining API endpoints
-├── Dockerfile                   # Instructions for building the Docker image
-├── requirements.txt             # Lists all Python dependencies for the project
-├── test_iris_api.py             # A simple Python script to test the deployed API
-└── model/                       # Directory containing the trained model artifacts
-├── iris_model.joblib        # The serialized scikit-learn Logistic Regression model
-└── iris_class_names.joblib  # A list mapping numerical predictions to Iris species names
 ## 🚀 Setup and Deployment
 
 The most straightforward way to get this project up and running is by executing the provided Google Colab notebook.
