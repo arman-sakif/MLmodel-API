@@ -86,31 +86,16 @@ This is a **CRITICAL** step to ensure the security of your API's authentication 
 * You can monitor the build process and runtime logs by clicking on the **"Logs"** tab on your Space page.
 * When the status changes to "Running", your API is fully live and ready to receive requests!
 
-## 🖼️ API Demo (Optional)
-
-*(You can add a screenshot or GIF here of the Swagger UI or the `test_iris_api.py` script running successfully.)*
-
-![API Demo Screenshot/GIF](path/to/your/screenshot.gif)
 
 ## 🧪 How to Test the API
 
-You can test the deployed API using the provided `test_iris_api.py` Python script or by directly using `curl` from your terminal.
+You can test the deployed API using the provided `testApp.py` Python script or by directly using `curl` from your terminal.
 
-### Using `test_iris_api.py`
+### Using `test_iris_api.py` (in online ide)
 
-1.  **Download:** Save the `test_iris_api.py` file to your local machine.
-2.  **Install Dependencies:** Ensure you have the `requests` library installed:
-    ```bash
-    pip install requests
-    ```
-3.  **Update Configuration:** Open `test_iris_api.py` in a text editor and update the following variables with your specific details:
-    * `API_BASE_URL`: This is the public URL of your Hugging Face Space application. It will be in the format `https://YOUR_HUGGINGFACE_USERNAME-iris-classifier-api-colab.hf.space`. You can find this URL prominently displayed on your Hugging Face Space page.
-    * `API_USERNAME`: Enter the exact username you set as a secret on Hugging Face Spaces.
-    * `API_PASSWORD`: Enter the exact password you set as a secret on Hugging Face Spaces.
-4.  **Run the script:** Execute the script from your terminal:
-    ```bash
-    python test_iris_api.py
-    ```
+1.  Go to https://www.onlinegdb.com/online_c_compiler and select language as Python3
+2.  copy paste the contents of testApp.py and run
+
     You should see the prediction results in a clear JSON format.
 
 ### Using `curl`
@@ -180,26 +165,6 @@ You can also access the interactive API documentation (Swagger UI) directly in y
 
 This API utilizes **HTTP Basic Authentication** for access control. This means that every request to the `/predict` endpoint must include an `Authorization` header containing your base64-encoded `username:password` string. The actual credentials (`API_USERNAME` and `API_PASSWORD`) are securely stored as environment variables (secrets) within your Hugging Face Space.
 
-## 💡 Future Improvements
-
-* **Enhanced Error Handling:** Implement more granular error handling for various scenarios (e.g., invalid input types, model loading failures).
-* **Structured Logging:** Integrate a robust logging framework to capture application events and errors more effectively.
-* **Monitoring & Alerting:** Set up external monitoring for API uptime, performance, and error rates.
-* **Advanced Authentication:** For production-grade applications, explore more sophisticated authentication mechanisms like OAuth2, JWT (JSON Web Tokens), or dedicated API Key management systems.
-* **Scalability & Load Balancing:** For higher traffic volumes, investigate advanced deployment options such as Google Cloud Run with custom domains, Kubernetes, or other serverless solutions.
-* **Model Versioning:** Implement a systematic approach for managing and deploying different versions of your machine learning model.
-* **CI/CD Pipeline:** Automate the testing, building, and deployment process using Continuous Integration/Continuous Deployment tools.
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please feel free to:
-
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/YourFeature`).
-3.  Make your changes.
-4.  Commit your changes (`git commit -m 'Add YourFeature'`).
-5.  Push to the branch (`git push origin feature/YourFeature`).
-6.  Open a Pull Request.
 
 ## ❓ Troubleshooting
 
