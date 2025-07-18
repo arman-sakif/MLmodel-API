@@ -12,7 +12,6 @@ This project provides a comprehensive, end-to-end demonstration of how to train 
 
 * [🚀 Features](#-features)
 * [💻 Technologies Used](#-technologies-used)
-* [📁 Project Structure](#-project-structure)
 * [🚀 Setup and Deployment](#-setup-and-deployment)
     * [1. Open and Run the Google Colab Notebook](#1-open-and-run-the-google-colab-notebook)
     * [2. Configure Hugging Face Space Secrets](#2-configure-hugging-face-space-secrets)
