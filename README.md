@@ -10,23 +10,20 @@ This project provides a comprehensive, end-to-end demonstration of how to train 
 
 ## 📋 Table of Contents
 
-* [🚀 Features](#-features)
-* [💻 Technologies Used](#-technologies-used)
-* [🚀 Setup and Deployment](#-setup-and-deployment)
+* [Features](#-features)
+* [Technologies Used](#-technologies-used)
+* [Setup and Deployment](#-setup-and-deployment)
     * [1. Open and Run the Google Colab Notebook](#1-open-and-run-the-google-colab-notebook)
     * [2. Configure Hugging Face Space Secrets](#2-configure-hugging-face-space-secrets)
     * [3. Monitor Deployment](#3-monitor-deployment)
-* [🧪 How to Test the API](#-how-to-test-the-api)
+* [How to Test the API](#-how-to-test-the-api)
     * [Using `test_iris_api.py`](#using-test_iris_apipy)
     * [Using `curl`](#using-curl)
 * [🌐 API Endpoints](#-api-endpoints)
 * [🔒 Authentication](#-authentication)
-* [💡 Future Improvements](#-future-improvements)
-* [🤝 Contributing](#-contributing)
 * [❓ Troubleshooting](#-troubleshooting)
-* [📄 License](#-license)
 
-## 🚀 Features
+## Features
 
 * **Iris Classification:** Trains a Logistic Regression model on the classic Iris dataset to accurately classify flower species.
 * **FastAPI Integration:** Serves the trained model via a blazing-fast and automatically documented RESTful API using FastAPI.
@@ -35,7 +32,7 @@ This project provides a comprehensive, end-to-end demonstration of how to train 
 * **Free Cloud Deployment:** Leverages Hugging Face Spaces' generous free tier for cost-effective and accessible API hosting.
 * **Google Colab Workflow:** Provides a self-contained Google Colab notebook (`.ipynb`) that guides you through every step, from model training and file generation to seamless deployment.
 
-## 💻 Technologies Used
+## Technologies Used
 
 * **Python:** The core programming language.
 * **scikit-learn:** For machine learning model training and inference.
@@ -46,7 +43,7 @@ This project provides a comprehensive, end-to-end demonstration of how to train 
 * **`huggingface_hub`:** A Python library for programmatic interaction with the Hugging Face Hub (Spaces, Models, Datasets).
 * **`requests`:** A popular Python library for making HTTP requests to test the API.
 
-## 🚀 Setup and Deployment
+## Setup and Deployment
 
 The most straightforward way to get this project up and running is by executing the provided Google Colab notebook.
 
@@ -87,7 +84,7 @@ This is a **CRITICAL** step to ensure the security of your API's authentication 
 * When the status changes to "Running", your API is fully live and ready to receive requests!
 
 
-## 🧪 How to Test the API
+## How to Test the API
 
 You can test the deployed API using the provided `testApp.py` Python script or by directly using `curl` from your terminal.
 
@@ -119,7 +116,7 @@ You can also test the API directly from your terminal using `curl`.
          -d '{"sepal_length": 5.0, "sepal_width": 3.4, "petal_length": 1.5, "petal_width": 0.3}'
     ```
 
-## 🌐 API Endpoints
+## API Endpoints
 
 The deployed FastAPI application exposes the following endpoints:
 
