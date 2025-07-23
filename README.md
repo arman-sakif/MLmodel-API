@@ -50,7 +50,7 @@ The most straightforward way to get this project up and running is by executing 
 ### 1. Open and Run the Google Colab Notebook
 
 1.  Click on the following link to open the notebook in Google Colab:
-    [**Open in Google Colab**](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/blob/main/iris_classifier_colab.ipynb)
+    [**Open in Google Colab**](https://colab.research.google.com/drive/1CKnn2zjJ0YzCKwM_qfsdjJJityETWV3l?usp=sharing)
     *(Remember to replace `YOUR_GITHUB_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub details)*
 2.  Once opened, execute all cells sequentially by going to `Runtime > Run all`.
 3.  The notebook will guide you through:
